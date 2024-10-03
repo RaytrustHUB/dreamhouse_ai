@@ -1,0 +1,7 @@
+venv/
+*.log
+*.gz
+*.zip
+__pycache__/
+data/
+models/

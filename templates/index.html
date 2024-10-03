@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dream House - AI-Powered Dream Home Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<!-- JavaScript -->
+<script src="/static/js/main.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+      .then(reg => console.log('Service Worker Registered'))
+      .catch(err => console.error('Service Worker Registration Failed:', err));
+    }
+  </script>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Dream House</h1>
+            <p>Transform your ideas into stunning home visualizations with AI</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#get-started">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h2>Visualize Your Dream Home</h2>
+            <p>My Dream House uses cutting-edge AI technology to turn your ideas into beautiful, realistic images of your perfect home.</p>
+            <a href="#get-started" class="cta-button">Start Designing Now</a>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Describe your dream house in detail or upload a photo of an existing space</li>
+                <li>Our AI analyzes your input and generates multiple design options</li>
+                <li>Review and refine the results until you're satisfied</li>
+                <li>Download high-resolution images of your dream home</li>
+            </ol>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature">
+                <h3>Text-to-Image Generation</h3>
+                <p>Describe your dream home and watch it come to life</p>
+            </div>
+            <div class="feature">
+                <h3>Photo Enhancement</h3>
+                <p>Transform existing spaces with AI-powered improvements</p>
+            </div>
+            <div class="feature">
+                <h3>Multiple Styles</h3>
+                <p>Choose from various design styles to match your taste</p>
+            </div>
+            <div class="feature">
+                <h3>Interior and Exterior</h3>
+                <p>Visualize both inside and outside your dream home</p>
+            </div>
+            <div class="feature">
+                <h3>Customizable Details</h3>
+                <p>Fine-tune colors, materials, and furniture to your liking</p>
+            </div>
+            <div class="feature">
+                <h3>High-Resolution Output</h3>
+                <p>Get detailed, high-quality images of your designs</p>
+            </div>
+        </section>
+
+        <section id="get-started">
+            <h2>Get Started</h2>
+            <p>Ready to see your dream home come to life? Click the button below to begin your journey!</p>
+            <a href="/generate" class="cta-button">Generate My Dream House</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Dream House. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
